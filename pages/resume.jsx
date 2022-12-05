@@ -159,7 +159,7 @@ const resume = () => {
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Currently, I am learning three js which is really amazing that
-              one can get 3D view of their website which is amaying stuff.
+              one can get 3D view of their website which is amazing stuff.
             </li>
             <li>
               I am also learning Next JS as it is one of the trending
