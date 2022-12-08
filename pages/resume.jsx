@@ -29,6 +29,7 @@ const resume = () => {
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
           <h2 className='text-center'>Neel Jivani</h2>
           <div className='flex'>
+            
             <a
               href='https://www.linkedin.com/in/neel-jivani-89b9a8148/'
               target='_blank'

@@ -29,7 +29,9 @@ const Main = () => {
           <p className='uppercase text-sm tracking-widest text-gray-600 animate-pulse'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className='py-4 text-gray-700'>
+          <h1 
+          
+          className='py-4 text-gray-700'>
             Hi, I&#39;m <span className='text-[#5651e5]'> Neel Jivani</span>
           </h1>
           <h1 className='py-2 text-gray-700'>A Full Stack Developer</h1>
