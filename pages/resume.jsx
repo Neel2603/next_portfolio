@@ -2,8 +2,25 @@ import React from 'react';
 import Head from 'next/head';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { BsDownload } from "react-icons/bs";
 
 const resume = () => {
+
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('Resume.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            window.open(fileURL, "_blank")
+            // alink.href = 'Resume.pdf';
+            alink.click();
+        })
+    })
+}
+
   return (
     <motion.div
     initial={{
@@ -21,7 +38,7 @@ const resume = () => {
           name='description'
           content='I’m a web developer specializing in building exceptional digital experiences with backend integration.'
         />
-        <link rel='icon' href='/fav.png' />
+        <link rel='icon' href='/NJ.png' />
       </Head>
 
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
@@ -29,7 +46,14 @@ const resume = () => {
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
           <h2 className='text-center'>Neel Jivani</h2>
           <div className='flex'>
-            
+
+            <a className='cursor-pointer'
+              onClick={() => onButtonClick()}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <BsDownload size={20} style={{ marginRight: '1rem' }} />
+            </a> 
             <a
               href='https://www.linkedin.com/in/neel-jivani-89b9a8148/'
               target='_blank'
