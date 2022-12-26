@@ -8,7 +8,7 @@ import Skills from '../components/Skills'
 
 export default function Home() {
   return (
-    <div>
+    <div className="pointer">
       <Head>
         <title>Neel | Full Stack Developer</title>
         <meta name="description" content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences." />
